@@ -1,9 +1,23 @@
+</p>
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=MemDOM%20Master%20OS&fontSize=42&fontColor=ffffff&animation=twinkling&fontAlignY=36&desc=Advanced%20Realtime%20RAM%20%26%20DOM%20Tree%20Optimizer%20for%20Chrome%20Power%20Users&descAlignY=58&descSize=15&descColor=c0c8ff" width="100%"/>
+  <h1 align="center">⚡ MemDOM Master OS</h1>
+  <p align="center"><b>Advanced Realtime RAM &amp; DOM Tree Optimizer for Chrome Power Users</b></p>
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&pause=800&color=A78BFA&center=true&vCenter=true&width=600&lines=⚡+Force+V8+GC+on+demand;💤+Deep+DOM+Compression+%26+Hibernation;🗺️+Realtime+Memory+Defragmentation+Map;🤖+True+Background+Auto-Pilot;🛡️+Your+RAM%2C+finally+protected." alt="Typing SVG" />
+  <a href="https://github.com/gbao86/mem-dom-master">
+    <img src="https://img.shields.io/badge/version-0.0.1-blueviolet.svg?style=for-the-badge" alt="Version"/>
+  </a>
+  <img src="https://img.shields.io/badge/Manifest-V3-38bdf8.svg?style=for-the-badge" alt="Manifest V3"/>
+  <img src="https://img.shields.io/badge/Stack-React%2019%20+%20TS%20+%20Vite-3b82f6.svg?style=for-the-badge" alt="Stack"/>
+  <img src="https://img.shields.io/badge/Chrome-Extension-yellow.svg?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Chrome"/>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/⚡_Force_V8_GC_on_demand-6C63FF?style=flat-square"/>
+  <img src="https://img.shields.io/badge/💤_Deep_DOM_Compression-5b21b6?style=flat-square"/>
+  <img src="https://img.shields.io/badge/🗺️_Realtime_Defrag_Map-7c3aed?style=flat-square"/>
+  <img src="https://img.shields.io/badge/🤖_Background_Auto--Pilot-4c1d95?style=flat-square"/>
 </p>
 
 <p align="center">
