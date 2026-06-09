@@ -10,6 +10,24 @@ interface TabDiagnostic {
   timestamp: number;
 }
 const tabDiagnosticCache: Record<number, TabDiagnostic> = {};
+const tabIdToUrlMap: Record<number, string> = {};
+
+chrome.tabs.onRemoved.addListener((tabId) => {
+  const url = tabIdToUrlMap[tabId];
+  if (url) {
+    let targetUrl = url;
+    if (url.includes("frozen.html")) {
+      try {
+        const parsed = new URL(url);
+        const orig = parsed.searchParams.get("url");
+        if (orig) targetUrl = orig;
+      } catch (e) {}
+    }
+    chrome.storage.local.remove(targetUrl);
+    delete tabIdToUrlMap[tabId];
+  }
+  delete tabDiagnosticCache[tabId];
+});
 
 // Kiểm tra khả năng hỗ trợ Side Panel để kích hoạt fallback popup
 if (chromeAny.sidePanel && typeof chromeAny.sidePanel.setPanelBehavior === "function") {
@@ -29,6 +47,7 @@ chrome.runtime.onMessage.addListener((message: any, sender: chrome.runtime.Messa
   // Nhận thông số RAM thực tế (JS Heap) và DOM từ tab gửi lên và lưu vào cache
   if (message.action === "REPORT_MEMORY") {
     if (sender && sender.tab && sender.tab.id) {
+      if (sender.tab.url) tabIdToUrlMap[sender.tab.id] = sender.tab.url;
       tabDiagnosticCache[sender.tab.id] = {
         ram: message.ram,
         domNodes: message.domNodes || 0,
@@ -88,6 +107,7 @@ chrome.runtime.onMessage.addListener((message: any, sender: chrome.runtime.Messa
       const tabDataMap: Record<number, any> = {};
       tabs.forEach((tab) => {
         if (!tab.id) return;
+        if (tab.url) tabIdToUrlMap[tab.id] = tab.url;
         
         let estimatedRam = 45; // Mặc định tab nhẹ
         const url = tab.url || "";
@@ -152,6 +172,7 @@ chrome.runtime.onMessage.addListener((message: any, sender: chrome.runtime.Messa
             const tabDataMap: Record<number, any> = {};
             tabs.forEach((tab: any) => {
               if (!tab.id) return;
+              if (tab.url) tabIdToUrlMap[tab.id] = tab.url;
 
               // 0. Nếu tab bị giải phóng (discarded), gán RAM = 0 ngay lập tức
               if (tab.discarded) {
@@ -266,6 +287,7 @@ function performAutoPilotCheck() {
 
       tabs.forEach((tab) => {
         if (!tab.id || !tab.url) return;
+        tabIdToUrlMap[tab.id] = tab.url;
         
         // Bỏ qua các tab hệ thống hoặc tab ngủ đông
         if (tab.url.includes("frozen.html") || tab.url.startsWith("chrome-extension://") || tab.url.startsWith("chrome://")) return;
