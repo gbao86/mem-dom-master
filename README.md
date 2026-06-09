@@ -74,3 +74,11 @@ To load this extension locally in your browser:
 - **Optimized UI Button Controls**: Enlarged the dashboard control buttons (`DỌN RÁC` and `NGỦ ĐÔNG` / `WAKE UP`) directly on the tab cards for a touch-friendly click experience.
 - **Telemetry fixes**: Discarded tabs now properly report exactly `0 MB` of memory and `0` DOM nodes/depth on the HUD.
 - **Hardware RAM Icon**: Replaced the spinning radar orb with a hardware RAM chip SVG logo to remove generic AI assistant styling.
+
+---
+
+## 👤 Author
+
+* **Trịnh Gia Bảo (gbao86)**
+* Email: [tiktokthu10@gmail.com](mailto:tiktokthu10@gmail.com)
+* GitHub: [@gbao86](https://github.com/gbao86)
