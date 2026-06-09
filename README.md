@@ -1,6 +1,11 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:6C63FF,100:a78bfa&height=180&section=header&text=MemDOM%20Master%20OS&fontSize=42&fontColor=ffffff&fontAlignY=36&desc=Advanced%20Realtime%20RAM%20%26%20DOM%20Tree%20Optimizer&descAlignY=58&descSize=15&descColor=e0d7ff" width="100%"/>
+  <img src="https://raw.githubusercontent.com/gbao86/mem-dom-master/main/src/assets/dashboard.png" width="0" height="0"/>
 </p>
+
+![](https://via.placeholder.com/1200x180/0d1117/6C63FF?text=+)
+
+<h1 align="center">⚡ MemDOM Master OS</h1>
+<p align="center"><b>Advanced Realtime RAM &amp; DOM Tree Optimizer for Chrome Power Users</b></p>
 
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=18&pause=800&color=A78BFA&center=true&vCenter=true&width=600&lines=⚡+Force+V8+GC+on+demand;💤+Deep+DOM+Compression+%26+Hibernation;🗺️+Realtime+Memory+Defragmentation+Map;🤖+True+Background+Auto-Pilot;🛡️+Your+RAM%2C+finally+protected." alt="Typing SVG" />
