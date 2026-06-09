@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=MemDOM%20Master%20OS&fontSize=42&fontColor=ffffff&animation=twinkling&fontAlignY=36&desc=Advanced%20Realtime%20RAM%20%26%20DOM%20Tree%20Optimizer%20for%20Chrome%20Power%20Users&descAlignY=58&descSize=15&descColor=c0c8ff" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:6C63FF,100:a78bfa&height=180&section=header&text=MemDOM%20Master%20OS&fontSize=42&fontColor=ffffff&fontAlignY=36&desc=Advanced%20Realtime%20RAM%20%26%20DOM%20Tree%20Optimizer&descAlignY=58&descSize=15&descColor=e0d7ff" width="100%"/>
 </p>
 
 <p align="center">
