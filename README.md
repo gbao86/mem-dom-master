@@ -1,14 +1,9 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/gbao86/mem-dom-master/main/src/assets/dashboard.png" width="0" height="0"/>
+  <img src="src/assets/header.svg" width="100%" alt="MemDOM Master OS"/>
 </p>
 
-![](https://via.placeholder.com/1200x180/0d1117/6C63FF?text=+)
-
-<h1 align="center">⚡ MemDOM Master OS</h1>
-<p align="center"><b>Advanced Realtime RAM &amp; DOM Tree Optimizer for Chrome Power Users</b></p>
-
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=18&pause=800&color=A78BFA&center=true&vCenter=true&width=600&lines=⚡+Force+V8+GC+on+demand;💤+Deep+DOM+Compression+%26+Hibernation;🗺️+Realtime+Memory+Defragmentation+Map;🤖+True+Background+Auto-Pilot;🛡️+Your+RAM%2C+finally+protected." alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=16&pause=800&color=A78BFA&center=true&vCenter=true&width=580&lines=Force+V8+GC+on+demand;Deep+DOM+Compression+%26+Hibernation;Realtime+Memory+Defragmentation+Map;True+Background+Auto-Pilot;Your+RAM%2C+finally+protected." alt="Typing SVG"/>
 </p>
 
 <p align="center">
@@ -135,5 +130,5 @@ npm run build
 </p>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" width="100%"/>
+  <img src="src/assets/footer.svg" width="100%" alt="footer"/>
 </p>
