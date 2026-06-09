@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "MemDOM Master - Advanced RAM & DOM Optimizer",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Tối ưu hóa RAM, nén trạng thái DOM chuyên sâu và quản lý bộ nhớ thông minh cho Power User.",
   "permissions": [
     "tabs",
