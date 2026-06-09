@@ -1,7 +1,98 @@
+<<<<<<< HEAD
 <p align="center">
   <img src="src/assets/header.svg" width="100%" alt="MemDOM Master OS"/>
 </p>
 
+=======
+
+raw
+Header · SVG
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="160" viewBox="0 0 900 160">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0c29"/>
+      <stop offset="50%" style="stop-color:#302b63"/>
+      <stop offset="100%" style="stop-color:#24243e"/>
+    </linearGradient>
+    <linearGradient id="shimmer" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#a78bfa;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#a78bfa;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#a78bfa;stop-opacity:0"/>
+      <animateTransform attributeName="gradientTransform" type="translate" from="-1 0" to="1 0" dur="2.5s" repeatCount="indefinite"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+ 
+  <!-- Background -->
+  <rect width="900" height="160" fill="url(#bg)"/>
+ 
+  <!-- Animated wave blobs -->
+  <ellipse cx="150" cy="160" rx="220" ry="90" fill="#6d28d9" opacity="0.25">
+    <animate attributeName="cx" values="150;200;150" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.25;0.4;0.25" dur="6s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="750" cy="0" rx="200" ry="80" fill="#4f46e5" opacity="0.25">
+    <animate attributeName="cx" values="750;700;750" dur="7s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.25;0.4;0.25" dur="7s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="450" cy="80" rx="180" ry="50" fill="#7c3aed" opacity="0.1">
+    <animate attributeName="ry" values="50;70;50" dur="5s" repeatCount="indefinite"/>
+  </ellipse>
+ 
+  <!-- Shimmer overlay -->
+  <rect width="900" height="160" fill="url(#shimmer)" opacity="0.5"/>
+ 
+  <!-- Floating particles -->
+  <circle cx="80" cy="40" r="2" fill="#c4b5fd" opacity="0.6">
+    <animate attributeName="cy" values="40;20;40" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;0.1;0.6" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="820" cy="120" r="2" fill="#c4b5fd" opacity="0.5">
+    <animate attributeName="cy" values="120;100;120" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0.1;0.5" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="450" cy="20" r="1.5" fill="#a78bfa" opacity="0.7">
+    <animate attributeName="cy" values="20;35;20" dur="3.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.7;0.2;0.7" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="200" cy="130" r="1.5" fill="#818cf8" opacity="0.5">
+    <animate attributeName="cy" values="130;115;130" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="680" cy="30" r="2" fill="#c4b5fd" opacity="0.4">
+    <animate attributeName="cy" values="30;50;30" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+ 
+  <!-- Main title with glow + fade-in -->
+  <text x="450" y="82" font-family="'Courier New', monospace" font-size="36" font-weight="bold"
+        fill="#ffffff" text-anchor="middle" filter="url(#glow)">
+    ⚡ MemDOM Master OS
+    <animate attributeName="opacity" values="0;1" dur="1.2s" fill="freeze"/>
+  </text>
+ 
+  <!-- Shimmer on title text -->
+  <text x="450" y="82" font-family="'Courier New', monospace" font-size="36" font-weight="bold"
+        fill="url(#shimmer)" text-anchor="middle" opacity="0.4">
+    ⚡ MemDOM Master OS
+  </text>
+ 
+  <!-- Subtitle with delayed fade-in -->
+  <text x="450" y="118" font-family="'Courier New', monospace" font-size="13"
+        fill="#c4b5fd" text-anchor="middle">
+    Advanced Realtime RAM &amp; DOM Tree Optimizer for Chrome Power Users
+    <animate attributeName="opacity" values="0;0;1" dur="2s" fill="freeze"/>
+  </text>
+ 
+  <!-- Bottom divider line animate -->
+  <line x1="0" y1="158" x2="0" y2="158" stroke="#a78bfa" stroke-width="2" opacity="0.6">
+    <animate attributeName="x2" values="0;900" dur="1.5s" fill="freeze"/>
+  </line>
+</svg>
+
+>>>>>>> 377f3a685b3f022af0310deafee450c26df45c36
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=16&pause=800&color=A78BFA&center=true&vCenter=true&width=580&lines=Force+V8+GC+on+demand;Deep+DOM+Compression+%26+Hibernation;Realtime+Memory+Defragmentation+Map;True+Background+Auto-Pilot;Your+RAM%2C+finally+protected." alt="Typing SVG"/>
 </p>
