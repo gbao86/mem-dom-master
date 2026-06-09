@@ -1,7 +1,9 @@
-</p>
 <p align="center">
-  <h1 align="center">⚡ MemDOM Master OS</h1>
-  <p align="center"><b>Advanced Realtime RAM &amp; DOM Tree Optimizer for Chrome Power Users</b></p>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=MemDOM%20Master%20OS&fontSize=42&fontColor=ffffff&animation=twinkling&fontAlignY=36&desc=Advanced%20Realtime%20RAM%20%26%20DOM%20Tree%20Optimizer%20for%20Chrome%20Power%20Users&descAlignY=58&descSize=15&descColor=c0c8ff" width="100%"/>
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&pause=800&color=A78BFA&center=true&vCenter=true&width=600&lines=⚡+Force+V8+GC+on+demand;💤+Deep+DOM+Compression+%26+Hibernation;🗺️+Realtime+Memory+Defragmentation+Map;🤖+True+Background+Auto-Pilot;🛡️+Your+RAM%2C+finally+protected." alt="Typing SVG" />
 </p>
 
 <p align="center">
@@ -11,23 +13,11 @@
   <img src="https://img.shields.io/badge/Manifest-V3-38bdf8.svg?style=for-the-badge" alt="Manifest V3"/>
   <img src="https://img.shields.io/badge/Stack-React%2019%20+%20TS%20+%20Vite-3b82f6.svg?style=for-the-badge" alt="Stack"/>
   <img src="https://img.shields.io/badge/Chrome-Extension-yellow.svg?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Chrome"/>
+  <img src="https://img.shields.io/badge/Platform-Chrome%20%7C%20Chromium%20%7C%20Edge-4285F4.svg?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Platform"/>
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/⚡_Force_V8_GC_on_demand-6C63FF?style=flat-square"/>
-  <img src="https://img.shields.io/badge/💤_Deep_DOM_Compression-5b21b6?style=flat-square"/>
-  <img src="https://img.shields.io/badge/🗺️_Realtime_Defrag_Map-7c3aed?style=flat-square"/>
-  <img src="https://img.shields.io/badge/🤖_Background_Auto--Pilot-4c1d95?style=flat-square"/>
-</p>
-
-<p align="center">
-  <a href="https://github.com/gbao86/mem-dom-master">
-    <img src="https://img.shields.io/badge/version-0.0.1-blueviolet.svg?style=for-the-badge" alt="Version"/>
-  </a>
-  <img src="https://img.shields.io/badge/Manifest-V3-38bdf8.svg?style=for-the-badge" alt="Manifest V3"/>
-  <img src="https://img.shields.io/badge/Stack-React%2019%20+%20TS%20+%20Vite-3b82f6.svg?style=for-the-badge" alt="Stack"/>
-  <img src="https://img.shields.io/badge/Chrome-Extension-yellow.svg?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Chrome"/>
-</p>
+> 🧩 **MemDOM Master OS** is a **Chrome Extension** (Manifest V3) built with React 19 + TypeScript + Vite.
+> Install it directly in Chrome — no account, no subscription, no cloud. Everything runs locally in your browser.
 
 ---
 
@@ -53,7 +43,7 @@
 
 ## 🚀 Key Features
 
-> MemDOM Master OS delivers surgical-grade memory optimization techniques packed into a beautiful **Nordic/Slate Dark** telemetry control HUD.
+> Surgical-grade memory optimization techniques packed into a beautiful **Nordic/Slate Dark** telemetry control HUD — right inside your browser toolbar.
 
 <details>
 <summary>🧹 <b>Active Heap Purging (Force V8 GC)</b></summary>
@@ -70,7 +60,7 @@ Minimizes inactive tabs down to a tiny static footprint. Extracts the entire HTM
 <details>
 <summary>💤 <b>True Background Auto-Pilot</b></summary>
 <br/>
-Runs silently in the background via alarms and intervals — even when the Dashboard UI is closed. Automatically triggers deep hibernation whenever a tab's memory usage meets or exceeds your custom-configured RAM threshold.
+Runs silently in the background via Chrome Alarms API and intervals — even when the Dashboard popup is closed. Automatically triggers deep hibernation whenever a tab's memory usage meets or exceeds your custom-configured RAM threshold.
 </details>
 
 <details>
@@ -89,6 +79,8 @@ Visualizes your page DOM node density and V8 heap state in an interactive 10×10
 
 ## 🛠️ Installation & Setup
 
+> **MemDOM Master OS** is a Chrome Extension — you load it from source via Chrome's Developer Mode. No Chrome Web Store listing yet.
+
 ```bash
 # 1. Clone the repository
 git clone https://github.com/gbao86/mem-dom-master.git
@@ -101,11 +93,14 @@ npm install
 npm run build
 ```
 
-Then load the extension in Chrome:
+**Load into Chrome / Chromium / Edge:**
 
-1. Open `chrome://extensions/`
-2. Enable **Developer mode** (top-right toggle)
+1. Open `chrome://extensions/` (or `edge://extensions/`)
+2. Enable **Developer mode** toggle (top-right)
 3. Click **Load unpacked** → select the generated `dist/` folder
+4. The ⚡ MemDOM icon will appear in your browser toolbar
+
+> ✅ Compatible with **Chrome**, **Chromium**, and **Microsoft Edge** (Manifest V3).
 
 ---
 
@@ -116,7 +111,7 @@ Then load the extension in Chrome:
 <details>
 <summary>🆕 <b>View changes</b></summary>
 
-- **True Background Auto-Pilot** — Relocated auto-pilot checking loop to the background service worker using alarms and intervals to keep optimization active when the dashboard popup is closed.
+- **True Background Auto-Pilot** — Relocated auto-pilot checking loop to the background service worker using Chrome Alarms API and intervals to keep optimization active when the dashboard popup is closed.
 - **Custom RAM Threshold** — Added a custom select selector (MB/GB) and text-input box allowing users to specify a customized RAM threshold for the Auto-Pilot trigger.
 - **5-Minute Grace Period** — Waking up an auto-hibernated tab temporarily registers it in a 5-minute grace period cache.
 - **Webpage Warning Banners** — Injected a floating warning toast at the top-right of webpages if they remain above the memory threshold during the grace period.
