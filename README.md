@@ -12,7 +12,7 @@
 
 When your Chrome tabs start eating all your precious RAM:
 
-![Coding Cat typing extremely fast](https://media.giphy.com/media/3oKIPnAiaMCws8nruU/giphy.gif)
+![Coding Cat typing extremely fast](src/assets/cat-programmer.gif)
 
 *“Write code, save RAM, sleep tabs, repeat.”*
 
